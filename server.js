@@ -17,7 +17,12 @@ function calculateToken() {
   return Math.round(Math.random() * 1e16);
 }
 
+
 const app = express();
+
+app.use(cors({
+  origin: '*'
+}));
 
 app.use(bodyParser.json());
 
