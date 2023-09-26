@@ -2,7 +2,7 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-
+const cors = require('cors');
 const { API_PORT, API_VERSION } = process.env;
 
 if (!API_PORT) {
